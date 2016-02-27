@@ -1,27 +1,28 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	    <html lang="en">
 
-	<!-- Make by Alison Ostendorf
+	<!-- Made by Alison Ostendorf
 	site: Virgo Ventures Blog
 	VirgoVentures.org
 	team@VirgoVentures.org -->
 
-
-	  	<title>Virgo Ventures - Blog</title>
+<!DOCTYPE html>
+<html>
+	<head>
+	    <html lang="en">
+	  	<title>Virgo Ventures</title>
+	  	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= csrf_meta_tags %>
 	  	<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="Virgo's rants, Virgo's ventures, and Virgo Newsletter" content="Virgo's rants, Virgo's ventures, and Virgo Newsletter">
-	  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  		<%= csrf_meta_tags %>
+	    <!-- Google fonts below -->
 	  	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	  	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>	   
+	  	<%= javascript_include_tag :defaults %>
 
 	</head>
-	<body>
+	<body class="<%= controller_name %><%= action_name%>">
 		<div class="container main-container">
 			<!-- begin newsletter code -->
 			<br>
