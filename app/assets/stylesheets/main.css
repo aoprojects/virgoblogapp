@@ -1,0 +1,277 @@
+
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right !important;
+}
+
+#articles_summary {
+	border: 3px solid rgba(231, 0, 0, 0.1);
+	padding: 20px;
+	border-radius: 8px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background: rgba(235, 235, 235, 0.3);
+}
+
+#articles_summary :hover {
+	color: blue;
+}
+
+#articles_list li {
+	list-style: none;
+}
+
+.articles-list-hide {
+	display: none;
+}
+
+.block {
+	display: block;
+}
+
+.blog-article {
+	text-align: left;
+	padding-left: 5%;
+}
+
+body {
+	background: url('../images/grey.png');
+}
+
+.border {
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	padding: 2px;
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+
+}
+
+footer {
+	text-align: right;
+}
+
+.headline {
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+}
+
+h1 {
+	color: #E70000;
+	padding: 20px;
+	font-size: 60px;
+}
+
+h2 {
+	font-family: 'Great Vibes', cursive;
+	margin-top: -0.5em;
+
+}
+
+h3 {
+	color: #E70000;
+}
+
+.indent {
+	text-indent: 3em;
+}
+
+.inline {
+	display: inline;
+}
+
+li {
+	list-style-type: square;
+}
+
+li a {
+	color: black;
+}
+
+.light-padding {
+	padding: 5px;
+	margin: 5px;
+}
+
+.logo-images {
+	width: 300px;
+	position: relative;
+	margin: 0 auto 0 auto;
+	/*bottom: 1em;
+	top: 1em;
+	left: 2em;
+	margin-top: 10%;
+	margin-bottom: 10%;*/
+}
+
+.logo-images-smaller {
+	top: 5em;
+}
+
+.logo-images-xs {
+	width: 70%;
+	top: 3em;
+	width: 200px;
+	margin: 15px;
+}
+
+.main-container {
+	width: 90%;
+	text-align: center;
+}
+
+#mce-EMAIL {
+	border: none;
+}
+
+.nav-text {
+	margin: 0 auto 0 auto;
+	font-family: font-family: ‘Courier New’, Courier, monospace;	
+}
+
+#bignav {
+	text-align: center !important;
+	margin: 0 auto 0 auto;
+}
+
+#bignav ul li {
+	text-align: center;
+	list-style: none;
+	display: block;
+	float: left;
+	padding: 15px;
+	margin: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	background: white;
+	border-radius: 10px;
+	border: 1px solid #BDBEC0;
+}
+
+#bignav ul li a {
+	color: #959293;
+
+}
+
+#bignav ul li :hover {
+	color: black;
+	text-decoration: none;
+	padding: 18px;
+	transition: 0.5s;
+}
+
+#newsletter-container {
+	float: right;
+	width: 30%;
+}
+
+.newsletter-text {
+	font-size: 18px;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+.red {
+	color: #E70000;
+}
+
+.social-media {
+
+}
+
+.social-media img {
+	width: 40px;
+}
+
+
+.this-page { /* for selecting nav on above xs size per page */
+	color: #4B4140 !important;
+	font-size: 19px;
+	transition: 0.5s;
+}
+
+ul {
+	color: #E70000; /* red color for bullet points */
+}
+
+.white_background {
+	background: white;
+	border-radius: 5px;
+	border: 1px solid #BDBEC0;
+}
+
+/* for hover over hamburger */
+
+
+
+#hamburger {
+	background: white;
+	border: 1px solid #BDBEC0;
+	text-align: left;
+	border-radius: 5px;
+	padding: 10px;
+	width: 95px;
+	font-size: 18px;
+	white-space: none;
+}
+
+#xsnav:hover ul {
+	display: block;
+	transition: 5.0s ease-in;
+}
+
+#xsnav ul {
+	width: 300px;
+	text-align: left;
+	text-indent: -2em;
+	border-radius: 5px;
+	border-right: 1px solid #BDBEC0;
+	display: none;
+	position: absolute;
+	left: 10px;
+}
+
+
+#xsnav ul li {
+	list-style: none;
+	padding: 10px 30px;
+	font-weight: bold;
+	white-space: none;
+	width: 100%;
+	background: white;
+	text-indent: 2em;
+	border-left: 1px solid #BDBEC0;
+}
+
+
+#xsnav ul li:hover {
+	list-style: none;
+	background: #DFDFDF;
+	white-space: none;
+
+}
+
+#xsnav ul li a:hover {
+	text-decoration: none;
+	color: #E70000;
+}
+
+
+
+/* end for hamburger nav */
+
+

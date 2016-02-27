@@ -1,14 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Virgo Ventures</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	    <html lang="en">
+
+	<!-- Make by Alison Ostendorf
+	site: Virgo Ventures Blog
+	VirgoVentures.org
+	team@VirgoVentures.org -->
+
+
+	  	<title>Virgo Ventures - Blog</title>
+	  	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="Virgo's rants, Virgo's ventures, and Virgo Newsletter" content="Virgo's rants, Virgo's ventures, and Virgo Newsletter">
+	  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= csrf_meta_tags %>
+	  	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	  	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>	   
+
+	</head>
+	<body>
+		<div class="container main-container">
+			<!-- begin newsletter code -->
+			<br>
+			<!-- <div class="align-left social-media">
+				<a href="https://twitter.com/VirgoBuilds" target="_none">
+					<img src="images/twitter_black.png" alt="Twitter">
+				</a>
+			</div> -->
+
+<!-- begin bootstrap collapse nav -->
+
+			<div class="collapse" id="exCollapsingNavbar">
+			  <div class="bg-inverse p-a-1">
+			    <h4>Collapsed content</h4>
+			    <h4>Collapsed content</h4>
+			    <h4>Collapsed content</h4>
+			    <h4>Collapsed content</h4>
+			    <span class="text-muted">Toggleable via the navbar brand.</span>
+			  </div>
+			</div>
+			<nav class="navbar navbar-light bg-faded">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+			    &#9776;
+			  </button>
+			</nav>
+
+<!-- End bootstrap collapsenav -->
+<!-- begin hover Nav text for xs screens -->
+			<nav id="xsnav" class="visible-xs-inline align-left">
+
+				<div id="hamburger" class="align-left">
+					 &#9776; Menu
+				</div>
+
+				<ul>
+					<li><a href="pages/VirgoVentures.html">Virgo's Ventures</a></li>
+					<li><a href="pages/VirgoProperties.html">Virgo's Properties</a></li>
+					<li><a href="index.html">Virgo's Blog</a></li>
+					<li><a href="pages/ContactVirgo.html">Contact Virgo</a></li>
+				</ul>
+
+			</nav><!-- visible-xs-inline #xcnav -->
+			<div class="clear"></div>
+<!-- end hover Nav ext for xs screens -->
+
+			<div id="newsletter-container">
+				<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+				
+				<div id="mc_embed_signup">
+
+					<form action="//virgoventures.us12.list-manage.com/subscribe/post?u=ce2ed06104e029152e8faa88e&amp;id=5e25a52cae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+					    <div id="mc_embed_signup_scroll" class="oneline form-group">
+					    	<h3 class="newsletter-text align-right">Newsletter Sign-up</h3>
+							<div>
+								<input class="newsletter-text form-control" type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder=" Email address" required>
+							</div><!-- end .border -->
+						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+						    	<input type="text" name="b_ce2ed06104e029152e8faa88e_5e25a52cae" tabindex="-1" value="">
+						    </div>
+						    <div class="align-right">
+					    		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default align-right light-padding">
+					    	</div>
+					    </div><!-- div for signup -->
+					</form>
+				</div>
+			</div><!-- end #newsletter-container -->
+			
+<!-- end newsletter code -->
+<!-- begin header, tagline, and nav area  -->
+
+			<div class="container align-center">
+				<h1 class="align-left headline">Virgo Ventures</h1>
+				<h2 class="align-left indent tagline">Opinions of a web developer / entrepreneuer.</h2>
+			</div>
+<!-- Nav text for screens not xs -->
+			<nav id="bignav" class="hidden-xs container nav-text">
+				<ul>
+					<li><a href="pages/VirgoVentures.html"><span class="hidden-xs hidden-sm">Virgo's </span>Ventures</a></li>
+					<li><a href="pages/VirgoProperties.html"><span class="hidden-xs hidden-sm">Virgo's </span>Properties</a></li>
+					<li><a href="Index.html" class="this-page"><span class="hidden-xs hidden-sm">Virgo's </span>Blog</a></li>
+					<li><a href="pages/ContactVirgo.html">Contact<span class="hidden-xs hidden-sm"> Virgo</span></a></li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+<!-- end Nav text for screens not xs -->
+			<hr>
+<!-- end header, tagline, and nav area -->
 
 <%= yield %>
 
+</div><!-- end main-container here -->
+	   
+	     <footer>
+	      <div class="container align-right">
+	        <h6>Developed by Virgo Ventures LLC.  &nbsp; | &nbsp; Contact us by emailing team@virgoventures.org or signing up for our <a href="#">Newsletter</a> at the top of the page.</h6>
+	      </div><!-- end footer content container -->
+	    </footer>
+
+
+	<!-- Scripts -->
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="jquery.js"></script>
 </body>
 </html>
+
