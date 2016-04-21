@@ -4,6 +4,7 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 $red: #E70000;
 $test: yellow;
+$gray: #DFDFDF;
 
 
 .align-center {
@@ -68,6 +69,8 @@ body {
 
 footer {
 	text-align: right;
+	border-top: 1px solid $gray;
+	
 }
 
 .headline {
@@ -299,7 +302,7 @@ ul {
 	background: white;
 	width: 100%;
 	padding: 0.4em;
-	border-bottom: #DFDFDF solid 1px;
+	border-bottom: $gray solid 1px;
 
 }
 
