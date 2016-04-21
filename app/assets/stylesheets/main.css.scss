@@ -223,9 +223,7 @@ ul {
 	border: 1px solid #BDBEC0;
 }
 
-/* for hover over hamburger */
-
-
+/* below for xs nav hover via hamburger, not a good choice for xs b/c touchscreens can't hover */
 
 #hamburger {
 	background: white;
@@ -279,20 +277,34 @@ ul {
 	color: #E70000;
 }
 
-.xs_nav_full_width {
-	color: $red;
-	background: $test;
+// below is for xs_nav_full_width styling
+
+
+#xs_nav_no_js {
+	width: 100%;
+
+
 }
 
-.xs_nav_full_width:hover {
+
+.xs_nav_full_width {
+	background: white;
+	width: 100%;
+	padding: 1em;
+	border-bottom: #DFDFDF solid 1px;
+
+}
+
+.xs_nav_full_width a {
+	color: black;
+	font-size: 1.2em;
+
+}
+
+.xs_nav_full_width :hover {
 	font-weight: bold;
 	color: $red;
 	text-decoration: none;
-}
-
-.xs_nav_no_js p {
-	width: 100%;
-	border-bottom: black solid 1px;
 }
 
 
