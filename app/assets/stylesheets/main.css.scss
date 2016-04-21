@@ -75,6 +75,14 @@ footer {
 	font-size: 60px;
 }
 
+@media screen and (max-width: 475px) {
+	.headline {
+		font-size: 45px;
+		text-indent: none;
+		text-align: center;
+	}
+} 
+
 h1 {
 	color: #E70000;
 	padding: 20px;
