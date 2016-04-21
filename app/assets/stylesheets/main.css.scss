@@ -3,6 +3,7 @@
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 $red: #E70000;
+$test: yellow;
 
 
 .align-center {
@@ -282,6 +283,7 @@ ul {
 
 .xs_nav_full_width {
 	color: $red;
+	background: $test;
 }
 
 .xs_nav_full_width:hover {
@@ -290,8 +292,7 @@ ul {
 	text-decoration: none;
 }
 
-.xs_nav_no_js a {
-	background: white;
+.xs_nav_no_js p {
 	width: 100%;
 	border-bottom: black solid 1px;
 }
