@@ -25,6 +25,14 @@
 	<body class="<%= controller_name %><%= action_name%>">
 		
 		<%= render 'layouts/nav_xs_full_width' %>
+
+		<span class="visible-md-inline visible=lg-inline">
+			<%= render 'layouts/newsletter_large' %>
+		</span>
+
+		<span class="visible-xs-inline visible-sm-inline">
+			<%= render 'layouts/newsletter_small' %>
+		</span>
 		
 		<div class="container main-container">
 			
@@ -40,8 +48,6 @@
 				
 
 <!-- end hover Nav ext for xs screens -->
-			
-		<%= render 'layouts/newsletter' %>
 
 		<%= render 'layouts/headline' %>
 
