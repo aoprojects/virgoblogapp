@@ -17,4 +17,8 @@ class PagesController < ActionController::Base
 		render layout: 'application'
 	end
 
+	def web_dev
+		render layout: 'application'
+	end
+
 end
