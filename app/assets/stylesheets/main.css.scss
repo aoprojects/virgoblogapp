@@ -2,6 +2,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+$red: #E70000;
 
 
 .align-center {
@@ -279,6 +280,21 @@ ul {
 	color: #E70000;
 }
 
+.xs_nav_full_width {
+	color: $red;
+}
+
+.xs_nav_full_width:hover {
+	font-weight: bold;
+	color: $red;
+	text-decoration: none;
+}
+
+.xs_nav_no_js a {
+	background: white;
+	width: 100%;
+	border-bottom: black solid 1px;
+}
 
 
 /* end for hamburger nav */
