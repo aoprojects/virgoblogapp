@@ -34,7 +34,7 @@ $gray: #DFDFDF;
 	list-style: none;
 }
 
-.articles-list-hide {
+.articles_list {
 	display: none;
 }
 
@@ -215,6 +215,13 @@ li a {
 	width: 40px;
 }
 
+.start_hidden {
+	display: none;
+}
+
+.start_visible {
+	
+}
 
 .this-page { /* for selecting nav on above xs size per page */
 	color: #4B4140 !important;
