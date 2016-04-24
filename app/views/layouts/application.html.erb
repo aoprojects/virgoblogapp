@@ -63,9 +63,27 @@
 
 
 	<!-- Scripts -->
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
-	<script src="js/lib/bootstrap.min.js"></script>
-	<script src="jquery.js"></script>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script> <!-- this is to import the jquery api via CDN -->
+	<script src="js/lib/bootstrap.min.js"></script> <!-- this brings in some bootstrap js code, not js framework import -->
+	<script src="jquery.js"></script> <!-- this is to import my custom jquery code file -->
+
+
+	<script>
+		$( "#xs_hamburger" ).click(function() {
+			$( "#xs_nav_nojs" ).toggle( "fast" );
+		});
+
+		$( "#articles_summary" ).click(function() {
+			$( "#articles_list" ).toggle( "fast" );
+		});
+
+	</script>
+
+
+
+
+
+
 </body>
 </html>
 

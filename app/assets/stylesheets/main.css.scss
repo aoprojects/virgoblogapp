@@ -20,12 +20,10 @@ $gray: #DFDFDF;
 }
 
 #articles_summary {
-	border: 3px solid rgba(231, 0, 0, 0.1);
-	padding: 20px;
-	border-radius: 8px;
+	
 	margin-top: 10px;
 	margin-bottom: 15px;
-	background: rgba(235, 235, 235, 0.3);
+	
 }
 
 #articles_summary :hover {
@@ -288,13 +286,25 @@ ul {
 	color: #E70000;
 }
 
-// below is for xs_nav_full_width styling
+// BELOW is for xs_nav_full_width styling
 
+#xs_hamburger {
+	color: $red;
+	text-align: right;
+	float: right;
+	padding: 15px 20px;
+	font-size: 2em;
+}
 
-#xs_nav_no_js {
+#xs_hamburger:hover {
+	background: #eeeeee;
+}
+
+// hamburger styling above ends and is cleared.
+
+#xs_nav_no_js{
 	width: 100%;
-
-
+	display: none;
 }
 
 
@@ -303,17 +313,21 @@ ul {
 	width: 100%;
 	padding: 0.4em;
 	border-bottom: $gray solid 1px;
+	border-top: $gray solid 1px;
+	list-style: none;
+}
 
+.xs_nav_full_width:hover {
+	background: #eee;
+	color: $red;
 }
 
 .xs_nav_full_width a {
 	color: black;
 	font-size: 1.2em;
-
 }
 
 .xs_nav_full_width :hover {
-	font-weight: bold;
 	color: $red;
 	text-decoration: none;
 }
