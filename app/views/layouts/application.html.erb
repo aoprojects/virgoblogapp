@@ -29,10 +29,6 @@
 		<span class="visible-md-inline visible=lg-inline">
 			<%= render 'layouts/newsletter_large' %>
 		</span>
-
-		<span class="visible-xs-inline visible-sm-inline">
-			<%= render 'layouts/newsletter_small' %>
-		</span>
 		
 		<div class="container main-container">
 			
@@ -70,7 +66,7 @@
 
 	<script>
 		$( "#xs_hamburger" ).click(function() {
-			$( "#xs_nav_nojs" ).toggle( "fast" );
+			$( "#xs_nav_nojs" ).fadeToggle();
 		});
 
 		$( "#articles_summary" ).click(function() {
