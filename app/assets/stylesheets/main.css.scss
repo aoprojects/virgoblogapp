@@ -203,6 +203,27 @@ li a {
 	white-space: nowrap;
 }
 
+.pages_web_dev {
+	.page_container {
+		h2 {
+			font-family: tahoma;
+		}
+		section {
+			padding: 2em;
+			text-align: left;
+			ul {
+				color: black;
+
+			}
+		}
+
+		section:nth-child(odd) {
+			background: #eee
+		}
+
+	}
+}
+
 .red {
 	color: #E70000;
 }
