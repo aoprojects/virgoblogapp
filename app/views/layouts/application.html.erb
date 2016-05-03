@@ -65,8 +65,9 @@
 
 
 	<script>
+	$( document ).ready(function() {
 		$( "#xs_hamburger" ).click(function() {
-			$( "#xs_nav_nojs" ).fadeToggle();
+			$( "#xs_nav_nojs" ).toggle( "fast" );
 		});
 
 		$( "#articles_summary" ).click(function() {
@@ -74,7 +75,7 @@
 			$( ".start_hidden" ).toggle( "fast" );
 			$( ".start_visible" ).toggle( "fast" );
 		});
-
+	});
 	</script>
 
 
