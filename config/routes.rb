@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
-  root 'pages#blog'
+  root 'pages#ventures'
   get 'about' => 'pages#about'
   get 'properties' => 'pages#properties'
-  get 'ventures' => 'pages#ventures'
+  get 'blog' => 'pages#blog'
   get 'web_dev' => 'pages#web_dev'
+
+  # replace blog_path with blog_path
+  # then replace root_path with blog_path
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
