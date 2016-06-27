@@ -23,13 +23,9 @@
 	</head>
 	<body class="<%= controller_name %>_<%= action_name%>">
 
-		<span class="hidden-md hidden-lg">
-			<%= render 'layouts/nav_xs_full_width' %>
-		</span>
+		<%= render 'layouts/agile_newsletter_code' %>
 
-		<span class="visible-md-inline visible=lg-inline">
-			<%= render 'layouts/newsletter_large' %>
-		</span>
+		
 		
 		<div class="container main-container">
 			
@@ -57,15 +53,12 @@
     <h6>Developed by Virgo Ventures LLC.  &nbsp; | &nbsp; Contact us by emailing team@virgoventures.org.</h6>
   </div><!-- end footer content container -->
 </footer>
+
 <!-- for agile crm tracking -->
-	<script type="text/javascript" src="https://virgoventures.agilecrm.com/stats/min/agile-min.js">
-	</script>
-	<script type="text/javascript" >
-	 _agile.set_account('tjkucq8hflt2g77o7hpf7nonke', 'virgoventures');
-	 _agile.track_page_view();
-	 _agile_execute_web_rules();
-	</script>
+<script type="text/javascript" src="https://virgoventures.agilecrm.com/stats/min/agile-min.js"> </script> 
+<script type="text/javascript" > _agile.set_account('tjkucq8hflt2g77o7hpf7nonke', 'virgoventures'); _agile.track_page_view(); _agile_execute_web_rules(); </script>
 <!-- end agile crm tracking code -->
+
 </body>
 </html>
 

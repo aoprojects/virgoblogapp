@@ -194,13 +194,27 @@ li a {
 	color: #959293;
 }
 
-#newsletter-container {
-	float: right;
-	width: 30%;
+#newsletter_section {
+	margin: 15px;
+	text-align: right;
 }
 
-.newsletter-text {
-	font-size: 18px;
+#newsletter_section p {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#newsletter_section div {
+	display: inline;
+}
+
+#newsletter_section input {
+	padding: 5px;
+}
+
+@media (max-width: 767px) {
+// for small screens
+
 }
 
 .no-wrap {
