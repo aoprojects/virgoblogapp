@@ -383,12 +383,14 @@ ul {
 
 
 .xs_nav_full_width {
-	background: white;
-	width: 100%;
-	padding: 0.4em;
+	background: #eeeeee;
+	width: 100vw;
+	padding: 0.4em 0px;
 	border-bottom: $gray solid 1px;
-	border-top: $gray solid 1px;
 	list-style: none;
+	list-style-type: none;
+	-webkit-padding-start: 0;
+
 }
 
 .xs_nav_full_width:hover {
