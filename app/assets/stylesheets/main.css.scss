@@ -188,6 +188,12 @@ li a {
 	text-align: center;
 }
 
+.modal-dialog {
+	position: fixed;
+	left: 10vw;
+	right: 10vw;
+}
+
 #mce-EMAIL {
 	border: none;
 }
@@ -215,7 +221,7 @@ li a {
 }
 
 #newsletter_section div {
-	display: inline;
+
 }
 
 #newsletter_section input {
