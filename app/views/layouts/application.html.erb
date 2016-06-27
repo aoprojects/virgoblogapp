@@ -18,18 +18,25 @@
 	    <!-- Google fonts below -->
 	  	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	  	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>	   
-	  	<%= javascript_include_tag :defaults %>
 
 	</head>
 	<body class="<%= controller_name %>_<%= action_name%>">
 
-		<%= render 'layouts/agile_newsletter_code' %>
+		<!-- below newsletter modal code will only render when modal is clicked -->
+		<%= render 'layouts/newsletter_modal' %>
 
-		
+		<div class="hidden-xs text-right" id="desktop_newsletter_button">
+			<!-- Button trigger modal -->
+			<a type="button" class="btn btn-danger" data-toggle="modal" data-target="#NewsletterModal">Newsletter Sign Up</a>
+		</div>
+
+		<span class="hidden-sm hidden-md hidden-lg">
+			<%= render 'layouts/nav_xs_full_width' %>
+		</span>
 		
 		<div class="container main-container">
 			
-			<br>
+		
 			<!-- <div class="align-left social-media">
 				<a href="https://twitter.com/VirgoBuilds" target="_none">
 					<img src="images/twitter_black.png" alt="Twitter">
