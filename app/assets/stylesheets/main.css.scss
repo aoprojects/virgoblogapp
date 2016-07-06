@@ -418,7 +418,7 @@ ul {
 /* end for hamburger nav */
 
 /* web development page styles below */
-.pages_web_dev {
+.pages_web_dev main{
 	h1 {
 		font-size: 24px;
 		text-align: center;
@@ -446,6 +446,11 @@ ul {
 	padding: 3px;
 	color: white;
 }
+
+.rate_category_details {
+	display: none;
+}
+
 
 /* end web dev page styles*/
 
