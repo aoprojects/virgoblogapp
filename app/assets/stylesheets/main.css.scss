@@ -415,7 +415,38 @@ ul {
 	text-decoration: none;
 }
 
-
 /* end for hamburger nav */
+
+/* web development page styles below */
+.pages_web_dev {
+	h1 {
+		font-size: 24px;
+		text-align: center;
+		font-style: italic;
+	}
+}
+#dev_portfolio {
+	border-top: 1px solid black;
+	background: #483D41;
+	font-size: 1em;
+	h2 {
+		color: white;
+		font-size: 20px;
+		text-align: center;
+	}
+	h3 {
+		color: white;
+	}
+}
+
+.portfolio_item {
+	border-radius: 15px;
+	text-align: left;
+	border: 1px solid white;
+	padding: 3px;
+	color: white;
+}
+
+/* end web dev page styles*/
 
 
