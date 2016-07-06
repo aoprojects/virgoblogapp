@@ -4,6 +4,7 @@
 $red: #E70000;
 $test: yellow;
 $gray: #DFDFDF;
+$background-color: #483D41;
 
 
 .align-center {
@@ -306,6 +307,10 @@ ul {
 	color: #E70000; /* red color for bullet points */
 }
 
+#ventures_section {
+	background: $background-color;
+}
+
 .white_background {
 	background: white;
 	border-radius: 5px;
@@ -429,7 +434,7 @@ ul {
 }
 
 #dev_portfolio {
-	background: #483D41;
+	background: $background-color;
 	width: 100%;
 	h2 {
 		color: white;
@@ -442,7 +447,7 @@ ul {
 }
 
 #dev_rates {
-	background: #483D41;
+	background: $background-color;
 	color: white;
 }
 
