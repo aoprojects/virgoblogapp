@@ -424,10 +424,13 @@ ul {
 		font-style: italic;
 	}
 }
+#dev_skills {
+	background: gray;
+}
+
 #dev_portfolio {
-	border-top: 1px solid black;
 	background: #483D41;
-	font-size: 1em;
+	width: 100%;
 	h2 {
 		color: white;
 		font-size: 20px;
