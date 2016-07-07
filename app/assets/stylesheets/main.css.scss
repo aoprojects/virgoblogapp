@@ -21,13 +21,11 @@ $background-color2: #4E3A3A;
 	text-align: right !important;
 }
 
-#articles_summary {
-	margin-top: 10px;
-	margin-bottom: 15px;
-}
-
-#articles_summary :hover {
-	color: blue;
+.article-container {
+	background: white;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 15px;
 }
 
 #articles_list li {
@@ -38,6 +36,14 @@ $background-color2: #4E3A3A;
 	display: none;
 }
 
+#articles_summary {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#articles_summary :hover {
+	color: blue;
+}
 
 #bignav {
 	text-align: center !important;
