@@ -9,7 +9,10 @@ $background-color2: #D3D3D3;
 $background-color2: #4E3A3A;
 
 
-
+.after-toggle {
+	display: none;
+	// for initially hiding down angle in dropdown toggle web_dev web_rates
+}
 .align-center {
 	text-align: center;
 }
@@ -332,7 +335,7 @@ li a {
 				color: $background-color;
 			}
 			.rate_category_details {
-				text-indent: 1em;
+				text-indent: 3em;
 			}
 		}
 	}

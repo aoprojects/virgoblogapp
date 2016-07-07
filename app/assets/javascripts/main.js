@@ -5,6 +5,8 @@ $( document ).ready(function() {
 
 	$( ".rate_category").click(function() {
 		$(this).next(".rate_category_details").toggle("fast");
+		$(this).find("span.before-toggle").toggle();
+		$(this).find("span.after-toggle").toggle();
 	});
 });
 
