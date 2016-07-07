@@ -291,9 +291,10 @@ li a {
 }
 
 .pages_web_dev {
-	.page_container {
+	main {
 		h2 {
 			font-family: tahoma;
+			text-align: center;
 		}
 		section {
 			padding: 2em;
@@ -303,8 +304,40 @@ li a {
 
 			}
 		}
+		h3, h4, h5 {
+			color: black;
+		}
+	
+		#dev_skills {
+			background: $background-color;
+		}
+
+		#dev_portfolio {
+			background: $background-color2;
+			width: 100%;
+			h2 {
+				color: white;
+				font-size: 20px;
+				text-align: center;
+			}
+			h3 {
+				color: $background-color;
+			}
+		}
+
+		#dev_rates {
+			background: $background-color2;
+			color: $background-color;
+			h3, p {
+				color: $background-color;
+			}
+			.rate_category_details {
+				text-indent: 1em;
+			}
+		}
 	}
 }
+
 
 .red {
 	color: $red;
@@ -462,27 +495,6 @@ ul {
 		text-align: center;
 		font-style: italic;
 	}
-}
-#dev_skills {
-	background: $background-color;
-}
-
-#dev_portfolio {
-	background: $background-color2;
-	width: 100%;
-	h2 {
-		color: white;
-		font-size: 20px;
-		text-align: center;
-	}
-	h3 {
-		color: white;
-	}
-}
-
-#dev_rates {
-	background: $background-color2;
-	color: white;
 }
 
 .portfolio_item {
