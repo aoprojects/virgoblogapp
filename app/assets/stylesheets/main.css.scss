@@ -9,6 +9,7 @@ $background-color2: #D3D3D3;
 $background-color2: #4E3A3A;
 
 
+
 .align-center {
 	text-align: center;
 }
@@ -98,6 +99,18 @@ body {
 	padding: 2px;
 }
 
+.btn-danger {
+	background-color: $red;
+	border: 1px soild $red;
+}
+
+.btn-default:hover {
+	background: white;
+	color: $red;
+	border: $red solid 1px;
+	background-color: $red;
+}
+
 .clear {
 	clear: both;
 }
@@ -144,7 +157,8 @@ footer a {
 } 
 
 h1 {
-	color: #E70000;
+	// color: #E70000;
+	color: $red;
 	padding: 20px;
 	font-size: 60px;
 }
@@ -155,8 +169,8 @@ h2 {
 
 }
 
-h3 {
-	color: #E70000;
+h3, h4, h5, h6 {
+	color: $red;
 }
 
 .indent {
@@ -263,6 +277,20 @@ li a {
 	white-space: nowrap;
 }
 
+.pages_about {
+	main {
+		background-color: $background-color2;
+		height: 60vh;
+		text-align: center;
+	}
+	p {
+		color: $background-color;
+		font-size: 1.2em;
+	}
+
+
+}
+
 .pages_web_dev {
 	.page_container {
 		h2 {
@@ -306,11 +334,15 @@ li a {
 }
 
 ul {
-	color: #E70000; /* red color for bullet points */
+	color: $red; /* red color for bullet points */
 }
 
 #ventures_section {
 	background: $background-color;
+}
+
+#ventures_section a {
+	text-align: center;
 }
 
 .white_background {
@@ -371,7 +403,7 @@ ul {
 
 #xsnav ul li a:hover {
 	text-decoration: none;
-	color: #E70000;
+	color: $red;
 }
 
 // BELOW is for xs_nav_full_width styling
