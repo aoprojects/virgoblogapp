@@ -1,10 +1,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
-$red: #E70000;
+$red: #8B001D;
 $test: yellow;
 $gray: #DFDFDF;
-$background-color: #483D41;
+$background-color: #E9E9E9;
+$background-color2: #D3D3D3;
+$background-color2: #4E3A3A;
 
 
 .align-center {
@@ -81,7 +83,7 @@ $background-color: #483D41;
 }
 
 body {
-	background: url('../images/grey.png');
+	background-color: $background-color;
 }
 
 .border {
@@ -104,7 +106,7 @@ body {
 	top: 3px;
 	right: 3px;
 	padding: 15px;
-	background: white;
+	background: $background-color;
 	z-index: 20;
 }
 
@@ -260,7 +262,6 @@ li a {
 		h2 {
 			font-family: tahoma;
 		}
-		
 		section {
 			padding: 2em;
 			text-align: left;
@@ -269,16 +270,11 @@ li a {
 
 			}
 		}
-
-		section:nth-child(odd) {
-			background: #eee
-		}
-
 	}
 }
 
 .red {
-	color: #E70000;
+	color: $red;
 }
 
 .social-media {
@@ -430,11 +426,11 @@ ul {
 	}
 }
 #dev_skills {
-	background: gray;
+	background: $background-color;
 }
 
 #dev_portfolio {
-	background: $background-color;
+	background: $background-color2;
 	width: 100%;
 	h2 {
 		color: white;
@@ -447,7 +443,7 @@ ul {
 }
 
 #dev_rates {
-	background: $background-color;
+	background: $background-color2;
 	color: white;
 }
 
