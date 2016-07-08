@@ -331,6 +331,9 @@ li a {
 		#dev_rates {
 			background: $background-color2;
 			color: $background-color;
+			h3 {
+				font-size: 20px;
+			}
 			h3, p {
 				color: $background-color;
 			}
