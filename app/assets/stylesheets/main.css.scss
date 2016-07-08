@@ -295,6 +295,14 @@ li a {
 
 .pages_web_dev {
 	main {
+		a:hover {
+			text-decoration: none;
+		}
+		h1 {
+		font-size: 24px;
+		text-align: center;
+		font-weight: 200;
+		}
 		h2 {
 			font-family: tahoma;
 			text-align: center;
@@ -318,13 +326,30 @@ li a {
 		#dev_portfolio {
 			background: $background-color2;
 			width: 100%;
+			color: $background-color;
 			h2 {
 				color: white;
-				font-size: 20px;
+				font-size: 30px;
 				text-align: center;
 			}
 			h3 {
 				color: $background-color;
+			}
+			.portfolio_item {
+				border-radius: 15px;
+				text-align: left;
+				padding: 3px;
+				color: white;
+			}
+			.portfolio_item .site_description {
+				padding-left: 3em;
+			}
+			a {
+				color: $background-color;
+			}
+			a:hover {
+				color: $background-color;
+				text-decoration: none;
 			}
 		}
 
@@ -349,6 +374,10 @@ li a {
 				font-style: italic;
 			}
 		}
+		.rate_category_details {
+			display: none;
+		}
+
 	}
 }
 
@@ -503,26 +532,6 @@ ul {
 /* end for hamburger nav */
 
 /* web development page styles below */
-.pages_web_dev main{
-	h1 {
-		font-size: 24px;
-		text-align: center;
-		font-style: italic;
-	}
-}
-
-.portfolio_item {
-	border-radius: 15px;
-	text-align: left;
-	border: 1px solid white;
-	padding: 3px;
-	color: white;
-}
-
-.rate_category_details {
-	display: none;
-}
-
 
 /* end web dev page styles*/
 

@@ -11,54 +11,58 @@
 				<div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
 					<a href="http://www.virgoventures.org" target="blank" alt="Virgo Ventures Company Page">
 						<h3>Virgo Ventures - About company website</h3>
-						<p>Description - This website you're looking at right now.</p>
-						<p>Images</p>
+						<p class="site_description">This website you're looking at right now.</p>
+						<p><%= image_tag("Virgo_Ventures.png", class: "img-responsive" ) %></p>
 					</a>
 				</div><!-- end .portfolio_item -->
 				<div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
 					<a href="http://www.rewholesalerdatabase.com" target="blank" alt="Real Estate Wholesaler Database">
 						<h3>Real Estate Wholesaler Database</h3>
-						<p>Description</p>
-						<p>Images <%= image_tag("rewd_home_page.png") %></p>
+						<p class="site_description">A full scale web application, built from scratch, that displays a database of real estate investment property wholesalers throughout the nation. <br><br>Users can sign in, join by monthly subscription, sign up for the company newsletter, etc.</p>
+						<p><%= image_tag("REWD_site.png", class: "img-responsive") %></p>
 					</a>
 				</div><!-- end .portfolio_item -->
-				<div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
+				<!-- <div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
 					<a href="http://www.http://stagemanagementsupplies.com" target="blank" alt="Stage Management Supplies - SM Kits product site">
 						<h3>Stage Management Supplies - responsive ecommerce application</h3>
 						<p>Description</p>
-						<p>Images</p>
+						<p></p>
 					</a>
-				</div><!-- end .portfolio_item -->
-				<div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
+				</div> --><!-- end .portfolio_item -->
+
+			<!-- 	<div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
 					<a href="http://www.http://blog.so-wise.com" target="blank" alt="Socialwise Partners Inc. company blog">
 						<h3>Socialwise Company Blog with SEO</h3>
-						<p>Description</p>
-						<p>Images</p>
+						<p class="site_description">Description</p>
+						<p></p>
 					</a>
-				</div><!-- end .portfolio_item -->
+				</div> -->
 				<div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
 					<a href="http://kdtnc.snwpe.servertrust.com/Default.asp" target="blank" alt="GymStore.com ecommerce site redevelopment">
 						<a href="http://sandbox.gymstore.com" target="blank" alt="GymStore.com ecommerce site">
 							<h3>GymStore.com ecommerce site</h3>
-							<p>Customized from the Hipster Volusion template.</p>
-							<p>Images</p>
+							<p class="site_description">A custom redesign project.<br><br>This site is still in progress and was initially customized from the Hipster Volusion template.</p>
+							<p><%= image_tag("Gym_Store.png", class: "img-responsive") %></p>
 						</a>
 				</div><!-- end .portfolio_item -->
-				<div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
+				<!-- <div class="portfolio_item col-md-4 col-sm-6 col-xs-12">
 					<a href="http://www.agentsforinvestors.org" target="blank" alt="Agents for Investors company landing page">
 						<h3>Agents for Investors - About page</h3>
-						<p>Description</p>
-						<p>Images</p>
+						<p class="site_description">Description</p>
+						<p></p>
 					</a>
-				</div><!-- end .portfolio_item -->
-				<div class="portfolio_item col-md-12 col-sm-12 col-xs-12">
+				</div> --><!-- end .portfolio_item -->
+
+				<!-- <div class="portfolio_item col-md-12 col-sm-12 col-xs-12">
 					<a href="#" alt="#" target="blank">
 						<h3>(law office) - responsive redesign</h3>
-						<p>Converted their nonresponsive site to a modern, responsive site, and added SEO.</p>
-						<p>Images</p>
+						<p class="site_description">Converted their nonresponsive site to a modern, responsive site, and added SEO.</p>
+						<p></p>
 					</a>
-				</div><!-- end .portfolio_item -->
+				</div> --><!-- end .portfolio_item -->
+
 			</div><!-- end .row -->
+			<p class="text-center">Stay tuned, more to come...</p>
 		</div><!-- end .container -->
 	</section><!-- end #dev_portfolio -->
 
@@ -76,8 +80,8 @@
 			<br>
 			<div class="row">
 				
-				<div class="col-sm-6">
-					<h3>What we can do</h3>
+				<div class="col-sm-offset-1 col-sm-5">
+					<h3 class="indent">What we can do</h3>
 					<ul>
 						<li>front end website design (HTML, CSS, JavaScript)</li>
 						<li>web application development (Ruby on Rails)</li>
@@ -93,8 +97,8 @@
 						<li>basic graphic design and image editing</li>
 					</ul>
 				</div><!-- end col -->
-				<div class="col-sm-6">
-					<h3>What we will not do</h3>
+				<div class="col-sm-5">
+					<h3 class="indent">What we will not do</h3>
 					<ul>
 						<li>extensive graphic design</li>
 						<li>photography</li>
@@ -110,109 +114,120 @@
 	</section><!-- end .dev_skills -->
 
 	<section id="dev_rates">
-		<div class="container">
+	
 			<h2>$ Rates</h2>
 			<br>
-				<p class="text-center">Everything we build is built from scratch, custom to your needs, unless specified otherwise.</p>
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8">
+					<p class="text-center">Everything we build is built from scratch, custom to your needs, unless specified otherwise.</p>
+				
+					<div class="rate_category">
+						<h3>Landing page - Simple, mobile responsive design
+							<%= render 'layouts/drop_arrows' %>
+						</h3>
+					</div><!-- end .rate_category -->
+					<div class="rate_category_details">
+						<p>Estimated to be completed 2 days from start date.</p>  
+					
+						<p>Cost: $1500 USD, flat fee</p>
+					
+						<p>With SEO: + $1,000 and one week’s development time.</p>
+					
+				    	<p>Example:
+				    		<ul>
+				    			<li><%= link_to "Real Estate Wholesaler Database Landing Page", "#", alt: "Real Estate Wholesaler Database Landing Page", target: "blank" %></li>
+				    		</ul>
+				    	</p>
+				    	
+				    </div><!-- end .rate_category_details -->
 			
-				<div class="rate_category">
-					<h3>Landing page - Simple, mobile responsive design
-						<%= render 'layouts/drop_arrows' %>
-					</h3>
-				</div><!-- end .rate_category -->
-				<div class="rate_category_details">
-					<p>Estimated to be completed 2 days from start date.</p>  
-				
-					<p>Cost: $1500 USD, flat fee</p>
-				
-					<p>With SEO: + $1,000 and one week’s development time.</p>
-				<!-- 	<br>
-			    	<p>Example: TODO</p> -->
-			    	
-			    </div><!-- end .rate_category_details -->
-		
-				<div class="rate_category">	
-					<h3>Full website - Simple, custom, mobile responsive design
-						<%= render 'layouts/drop_arrows' %>
-					</h3>
-				</div>
-				<div class="rate_category_details">
-					<p>Estimated to be done one week from start date. Often can be done in 3 days.</p>
-					<p>Cost: $3000 USD flat fee</p>
+					<div class="rate_category">	
+						<h3>Full website - Simple, custom, mobile responsive design
+							<%= render 'layouts/drop_arrows' %>
+						</h3>
+					</div>
+					<div class="rate_category_details">
+						<p>Estimated to be done one week from start date. Often can be done in 3 days.</p>
+						<p>Cost: $3000 USD flat fee</p>
+						
+						<p>With SEO: + $1,000 and one week’s development time.</p>
 					
-					<p>With SEO: + $1,000 and one week’s development time.</p>
+						<p>Example: 
+							<ul>
+								<li><%= link_to "Astoria Real Estate Agent", "http://www.astoriarealestateagent.com", target: "_none" %>
+								</li>
+								<!-- <li>Link to Socialwise Blog</li> -->
+							</ul>
+						</p>
+					</div><!-- end .rate_category_details -->
+
+					<div class="rate_category">
+						<h3>Web application - Simple, custom, mobile responsive
+							<%= render 'layouts/drop_arrows' %>
+						</h3>
+					</div>
+					<div class="rate_category_details">
+						<p>Estimated to be completed within 2 weeks - 2 months, depending on the scope of the project.</p>
+						<p>Cost: $10k - $50k USD, depending on the scope of work.</p>
 				
-					<p>Example: 
-						<ul>
-							<li><%= link_to "Astoria Real Estate Agent", "http://www.astoriarealestateagent.com", target: "_none" %>
-							</li>
-						</ul>
-					</p>
-				</div><!-- end .rate_category_details -->
+				   <!--  - q: (drop down) what counts as a web application vs a simple website? -->
+				    	<p>Examples:</p>
+				    	<ul>
+				    		<li><%= link_to "Real Estate Wholesaler Database", "http://www.rewholesalerdb.com", target: "_none", alt: "real estate investment property wholesaler database" %></li>
+				    		<li><%= link_to "Stage Management Kits", "http://www.stagemanagementsupplies.com", target: "_none", alt: "theatrical stage management supplies and kits" %></li>
+				    	
+				    	</ul>
+				    </div><!-- end .rate_category_details -->
 
-				<div class="rate_category">
-					<h3>Web application - Simple, custom, mobile responsive
-						<%= render 'layouts/drop_arrows' %>
-					</h3>
-				</div>
-				<div class="rate_category_details">
-					<p>Estimated to be completed within 2 weeks - 2 months, depending on the scope of the project.</p>
-					<p>Cost: $10k - $50k USD, depending on the scope of work.</p>
-			
-			   <!--  - q: (drop down) what counts as a web application vs a simple website? -->
-			    	<p>Examples:</p>
-			    	<ul>
-			    		<li><%= link_to "Real Estate Wholesaler Database", "http://www.rewholesalerdb.com", target: "_none", alt: "real estate investment property wholesaler database" %></li>
-			    		<li><%= link_to "Stage Management Kits", "http://www.stagemanagementsupplies.com", target: "_none", alt: "theatrical stage management supplies and kits" %></li>
-			    	
-			    	</ul>
-			    </div><!-- end .rate_category_details -->
+			    	<div class="rate_category">
+						<h3>eCommerce template editing
+							<%= render 'layouts/drop_arrows' %>
+						</h3>
+					</div>
+					<div class="rate_category_details">
+						<p>"Template editing" means editing a pre-existing ecommerce product, like those from Volition or Shopify.</p>
 
-		    	<div class="rate_category">
-					<h3>eCommerce template editing
-						<%= render 'layouts/drop_arrows' %>
-					</h3>
-				</div>
-				<div class="rate_category_details">
-					<p>"Template editing" means editing a pre-existing ecommerce product, like those from Volition or Shopify.</p>
-
-					<p>Cost: $5,000 USD complete project, or $100/hour for spot editing</p>
-				
-			    	<p>Example: 
-			    		<ul>
-			    			<li><%= link_to "Gymstore.com", "http://www.sandbox.gymstore.com", target: "_none" %></li>
-			    		</ul>
-			    	</p>
-		    	</div><!-- end .rate_category_details -->
-
-				<div class="rate_category">
-					<h3>Consulting or Code editing
-						<%= render 'layouts/drop_arrows' %>
-					</h3>
-				</div>
-				<div class="rate_category_details">
+						<p>Cost: $5,000 USD complete project, or $100/hour for spot editing</p>
 					
-					<p>Cost: $100/hour, 1 hour minimum</p>
-					
-					<p>Consulting is included and the fee is waived when we are hired on a per-project basis.</p>
+				    	<p>Example: 
+				    		<ul>
+				    			<li><%= link_to "Gymstore.com", "http://www.sandbox.gymstore.com", target: "_none" %></li>
+				    		</ul>
+				    	</p>
+			    	</div><!-- end .rate_category_details -->
 
-				</div><!-- end .rate_category_details -->
+					<div class="rate_category">
+						<h3>Consulting or Code editing
+							<%= render 'layouts/drop_arrows' %>
+						</h3>
+					</div>
+					<div class="rate_category_details">
+						
+						<p>Cost: $100/hour, 1 hour minimum</p>
+						
+						<p>Consulting is included and the fee is waived when we are hired on a per-project basis.</p>
 
-				<div>
-					<br>
-					<small class="text-center"><i>If for any reason we choose not to work together, Virgo Ventures can provide referrals to other specialists who may be better suited to work with you on your project.</i></small>
-				</div>
-			</div><!-- end .container -->
+					</div><!-- end .rate_category_details -->
+
+					<div>
+						<br>
+						<small class="text-center"><i>If for any reason we choose not to work together, Virgo Ventures can provide referrals to other specialists who may be better suited to work with you on your project.</i></small>
+					</div>
+				</div><!-- end col -->
+			</div><!-- end .row -->
 	</section><!-- end #dev_rates section -->
 	<section>
 		<h2>Hire Us</h2>
 		<br>
+		<div class="row">
+			<div class="col-sm-offset-2 col-sm-8">
+				<p>Please email Virgo Ventures LLC at <strong>Team@VirgoVentures.org</strong> or text <strong>+1.917.727.7206</strong> to introduce us to your project.</p> 
 
-		<p>Please email Virgo Ventures LLC at <strong>Team@VirgoVentures.org</strong> or text <strong>+1.917.727.7206</strong> to introduce us to your project.</p> 
+				<p>Please be sure to mention your preferred method of contact, and a short description of the project, the timeline, and that you've read our rates section above.</p>
 
-		<p>Please be sure to mention your preferred method of contact, and a short description of the project, the timeline, and that you've read our rates section above.</p>
-
-		<p>If we are not the right team to work for you, we will tell you so.  The internet does not yet build itself and we are not interested in wasting anybody's time.</p>
+				<p>If we are not the right team to work for you, we will tell you so.  The internet does not yet build itself and we are not interested in wasting anybody's time.</p>
+			</div><!-- end col -->
+		</div><!-- end .row -->
 	
 	</section>
 
