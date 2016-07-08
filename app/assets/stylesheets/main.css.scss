@@ -335,7 +335,15 @@ li a {
 				color: $background-color;
 			}
 			.rate_category_details {
-				text-indent: 3em;
+				padding-left: 3em;
+			}
+			ul li {
+				list-style: none;
+				list-style-type: none;
+			}
+			a {
+				color: $background-color;
+				font-style: italic;
 			}
 		}
 	}
