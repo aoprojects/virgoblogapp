@@ -514,13 +514,14 @@ ul {
 
 
 .xs_nav_full_width {
-	background: #eeeeee;
-	width: 100vw;
+	position: relative;
+	left: -3em;
+	// background: #eeeeee;
+	width: 115%;
 	padding: 0.4em 0px;
 	border-bottom: $gray solid 1px;
 	list-style: none;
 	list-style-type: none;
-
 }
 
 .xs_nav_full_width:hover {
