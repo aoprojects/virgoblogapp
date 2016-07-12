@@ -526,16 +526,12 @@ ul {
 .xs_nav_full_width:hover {
 	background: #eee;
 	color: $red;
+	text-decoration: none;
 }
 
 .xs_nav_full_width a {
 	color: black;
 	font-size: 1.2em;
-}
-
-.xs_nav_full_width :hover {
-	color: $red;
-	text-decoration: none;
 }
 
 /* end for hamburger nav */
