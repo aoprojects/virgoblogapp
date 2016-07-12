@@ -516,7 +516,7 @@ ul {
 .xs_nav_full_width {
 	position: relative;
 	left: -3em;
-	// background: #eeeeee;
+	background: lighten($background-color, 7%);
 	width: 115%;
 	padding: 0.4em 0px;
 	border-bottom: $gray solid 1px;
@@ -531,8 +531,9 @@ ul {
 }
 
 .xs_nav_full_width a {
-	color: black;
+	// color: black;
 	font-size: 1.2em;
+	color: $red;
 }
 
 /* end for hamburger nav */
