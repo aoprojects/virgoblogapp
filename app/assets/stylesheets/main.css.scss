@@ -196,6 +196,21 @@ li a {
 	margin: 5px;
 }
 
+.logo-header {
+	max-width: 120px;
+	margin: 20px;
+	@media only screen and (max-width: 528px) {
+		
+	}
+	@media only screen and (min-width: 529px) {
+		position: relative;
+		left: 30px;
+	}
+
+	
+
+}
+
 .logo-images {
 	width: 300px;
 	position: relative;
@@ -272,6 +287,11 @@ li a {
 	#newsletter_section {
 		text-align: center;
 	}
+	#headline_container {
+
+	}
+}
+@media (min-width: 766px) {
 
 }
 
@@ -409,6 +429,15 @@ li a {
 
 .start_visible {
 	
+}
+
+.tagline {
+	display: block;
+	position: relative;
+	top: 90px;
+	left: -110px;
+
+
 }
 
 .this-page { /* for selecting nav on above xs size per page */
