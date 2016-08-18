@@ -4,8 +4,10 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title text-center" id="myModalLabel">Virgo Ventures Newsletter - Sign Up </h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+	        </button>
+	        <h4 class="modal-title" id="myModalLabel"></h4>
+	        <div class="text-center"><%= image_tag('vv_logo', class: 'text-center logo-100') %></div>
 	      </div>
 	      <div class="modal-body">
 	        <%= render 'layouts/agile_newsletter_code' %>
