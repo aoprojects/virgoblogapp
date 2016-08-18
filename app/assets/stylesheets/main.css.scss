@@ -439,8 +439,13 @@ li a {
 	position: relative;
 	top: 90px;
 	left: -110px;
+}
 
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.tagline2 {
+		position: relative;
+		top: 90px;
+	}
 }
 
 .this-page { /* for selecting nav on above xs size per page */
