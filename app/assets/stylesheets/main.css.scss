@@ -370,15 +370,27 @@ li a {
 				font-weight: light;
 			}
 			.portfolio_item {
-				border-radius: 15px;
 				text-align: left;
 				padding: 3px;
 				color: white;
+			}
+
+			.portfolio_item:hover {
+				background: darken($background-color2, 7%);
+				// gives hover effect to the whole item background
 			}
 			.portfolio_item .site_description {
 				padding-left: 3em;
 
 			}
+			.portfolio-item-text-area {
+				height: 14em;
+			}
+			.inner-portfolio-div {
+				padding: 15px;
+			}
+
+
 			a {
 				color: $background-color;
 			}
@@ -417,10 +429,7 @@ li a {
 }
 
 @media only screen and (min-width: 992px) {
-	.portfolio_item .site_description {
-			height: 8em;
-
-		}
+		 
 }
 
 
