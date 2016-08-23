@@ -8,6 +8,9 @@ $background-color: #E9E9E9;
 $background-color2: #D3D3D3;
 $background-color2: #4E3A3A;
 
+.logo-100 {
+	max-width: 100px;
+}
 
 .after-toggle {
 	display: none;
@@ -335,6 +338,7 @@ li a {
 		h2 {
 			font-family: tahoma;
 			text-align: center;
+			font-size: 26px;
 		}
 		section {
 			padding: 4em;
@@ -363,21 +367,38 @@ li a {
 			}
 			h3 {
 				color: $background-color;
+				font-weight: 400;
 			}
 			.portfolio_item {
-				border-radius: 15px;
 				text-align: left;
 				padding: 3px;
 				color: white;
 			}
-			.portfolio_item .site_description {
-				padding-left: 3em;
+
+			.portfolio_item:hover {
+				background: darken($background-color2, 7%);
+				// gives hover effect to the whole item background
 			}
+			.portfolio_item .site_description {
+				padding-left: 1em;
+
+			}
+			.portfolio-item-text-area {
+				height: 15em;
+			}
+			.inner-portfolio-div {
+				padding: 20px;
+			}
+
+
 			a {
 				color: $background-color;
 			}
 			a:hover {
 				color: $background-color;
+				text-decoration: none;
+			}
+			a:visited, a:active{
 				text-decoration: none;
 			}
 		}
@@ -410,6 +431,10 @@ li a {
 	}
 }
 
+@media only screen and (min-width: 992px) {
+		 
+}
+
 
 .red {
 	color: $red;
@@ -436,8 +461,13 @@ li a {
 	position: relative;
 	top: 90px;
 	left: -110px;
+}
 
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.tagline2 {
+		position: relative;
+		top: 90px;
+	}
 }
 
 .this-page { /* for selecting nav on above xs size per page */
