@@ -380,14 +380,14 @@ li a {
 				// gives hover effect to the whole item background
 			}
 			.portfolio_item .site_description {
-				padding-left: 3em;
+				padding-left: 1em;
 
 			}
 			.portfolio-item-text-area {
-				height: 14em;
+				height: 15em;
 			}
 			.inner-portfolio-div {
-				padding: 15px;
+				padding: 20px;
 			}
 
 
@@ -396,6 +396,9 @@ li a {
 			}
 			a:hover {
 				color: $background-color;
+				text-decoration: none;
+			}
+			a:visited, a:active{
 				text-decoration: none;
 			}
 		}
