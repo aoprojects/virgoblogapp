@@ -12,6 +12,13 @@ $background-color2: #4E3A3A;
 	max-width: 100px;
 }
 
+#about-us-section {
+	max-width: 600px;
+	h3 {
+		padding: 15px;
+	}
+}
+
 .after-toggle {
 	display: none;
 	// for initially hiding down angle in dropdown toggle web_dev web_rates
