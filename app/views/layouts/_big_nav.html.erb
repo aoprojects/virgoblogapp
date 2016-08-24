@@ -1,13 +1,17 @@
 <!-- Nav text for screens not xs -->
-			<nav id="bignav" class="hidden-xs hidden-sm container nav-text">
-				<ul>
-					<li><%= link_to "Web Development", web_dev_path %></li>
-					<li><%= link_to "Business Ventures", ventures_path %></li>
-					<!-- <li><%= link_to "Properties", properties_path %></li> -->
-					<li><%= link_to "The Blog", blog_path %></li>
-					<li><%= link_to "Contact Us", about_path %></li>
-				</ul>
+<div id="logo-upper-left-nav">
+	<%= link_to image_tag('vv_logo.png', alt: 'Virgo Ventures logo'), root_path %>
+</div><!-- #logo-sm-upper-left-nav -->			
 
-			</nav>
-			<div class="clear"></div>
+
+<nav id="bignav" class="hidden-xs hidden-sm container nav-text">
+	<ul>
+		<li><%= link_to "Web Development", web_dev_path %></li>
+		<li><%= link_to "Business Ventures", ventures_path %></li>
+		<!-- <li><%= link_to "Properties", properties_path %></li> -->
+		<li><%= link_to "Blog", blog_path %></li>
+		<li><%= link_to "Contact", about_path %></li>
+	</ul>
+</nav>
+		
 <!-- end Nav text for screens not xs -->

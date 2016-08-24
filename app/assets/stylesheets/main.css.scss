@@ -55,6 +55,9 @@ $background-color2: #4E3A3A;
 #bignav {
 	text-align: center !important;
 	margin: 0 auto 0 auto;
+	position: absolute;
+	top: 0;
+	left: 80px;
 }
 
 #bignav ul li {
@@ -66,9 +69,6 @@ $background-color2: #4E3A3A;
 	margin: 10px;
 	font-weight: bold;
 	font-size: 18px;
-	background: white;
-	border-radius: 10px;
-	border: 1px solid #BDBEC0;
 }
 
 #bignav ul li :hover {
@@ -153,6 +153,11 @@ footer a {
 	font-size: 60px;
 }
 
+@media only screen and (max-width: 991px) {
+
+
+}
+
 @media screen and (max-width: 475px) {
 	.headline {
 		font-size: 45px;
@@ -199,19 +204,39 @@ li a {
 	margin: 5px;
 }
 
-.logo-header {
-	max-width: 120px;
-	margin: 20px;
-	@media only screen and (max-width: 528px) {
+// .logo-header {
+// 	max-width: 120px;
+// 	margin: 20px;
+// 	position: absolute;
+// 	left: 0;
+// 	@media only screen and (max-width: 528px) {
 		
-	}
-	@media only screen and (min-width: 529px) {
-		position: relative;
-		left: 30px;
-	}
+// 	}
+// 	@media only screen and (min-width: 529px) {
+// 		position: relative;
+// 		left: 30px;
+// 	}
+// }
 
-	
-
+@media only screen and (max-width: 991px) {
+	#logo-upper-left-nav img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 70px;
+		padding: 10px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#logo-upper-left-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 15px;
+	}
+	#logo-upper-left-nav img {
+		width: 90px;
+	}
 }
 
 .logo-images {
