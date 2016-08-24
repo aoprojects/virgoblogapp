@@ -386,6 +386,11 @@ li a {
 			.portfolio-item-text-area {
 				height: 15em;
 			}
+			@media only screen and (max-width: 767px) {
+				.portfolio-item-text-area {
+					height: auto;
+				}	
+			}
 			.inner-portfolio-div {
 				padding: 20px;
 			}
