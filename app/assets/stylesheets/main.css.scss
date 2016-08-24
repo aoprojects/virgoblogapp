@@ -56,8 +56,8 @@ $background-color2: #4E3A3A;
 	text-align: center !important;
 	margin: 0 auto 0 auto;
 	position: absolute;
-	top: 0;
-	left: 80px;
+	top: 20px;
+	left: 70px;
 }
 
 #bignav ul li {
@@ -76,11 +76,9 @@ $background-color2: #4E3A3A;
 	text-decoration: none;
 }
 
-
 #bignav ul li a {
 	color: #959293;
 }
-
 
 .black {
 	color: black !important;
@@ -274,6 +272,12 @@ li a {
 
 #mce-EMAIL {
 	border: none;
+}
+
+#nav-company-name {
+	position: absolute;
+	top: 0;
+	margin: 0 auto 0 auto;
 }
 
 .nav-text {
