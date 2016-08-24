@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  root 'pages#ventures'
+  root 'pages#web_dev'
+  get 'web_dev' => "pages#web_dev"
   get 'about' => 'pages#about'
   get 'properties' => 'pages#properties'
   get 'blog' => 'pages#blog'
-  get 'web_dev' => 'pages#web_dev'
+  get 'ventures' => 'pages#ventures'
 
   # replace blog_path with blog_path
   # then replace root_path with blog_path
