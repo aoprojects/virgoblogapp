@@ -425,8 +425,16 @@ li a {
 			@media only screen and (max-width: 767px) {
 				.portfolio-item-text-area {
 					height: auto;
-				}	
+				}		
 			}
+			@media only screen and (max-width: 670px) {
+				// .inner-portfolio-div {
+				// 	width: 100vw;
+
+				// }
+				// put sizing to make portfolio items 100% wide on xs screens here TODO
+			}
+
 			.inner-portfolio-div {
 				padding: 20px;
 			}
