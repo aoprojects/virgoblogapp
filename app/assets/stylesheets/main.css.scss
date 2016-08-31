@@ -4,18 +4,35 @@
 $red: #8B001D;
 $test: yellow;
 $gray: #DFDFDF;
-$background-color: #E9E9E9;
-$background-color2: #D3D3D3;
-$background-color2: #4E3A3A;
 
-.logo-100 {
-	max-width: 100px;
-}
+
+$text-color: #8B001D;
+// this is the $red above
+
+$text-color2: #4E3A3A;
+// this is the old purple color
+$background-color: #E9E9E9;
+// $background-color2: #D3D3D3;
+// this above is light gray
+
+
+$background-color2: rgba(114,107,104,0.2);
+// this above is a very light gray
+
+// $background-color2: rgb(240,255,206);
+// this above is a really annoying yellow green fluorescent
+
+// $background-color2: rgb(176,185,197);
+// this above is kind of a light blue
+
+// $background-color2: #4E3A3A;
+// this above is the dark purple brown
 
 #about-us-section {
 	max-width: 600px;
 	h3 {
 		padding: 15px;
+		color: $red;
 	}
 }
 
@@ -129,6 +146,10 @@ body {
 
 }
 
+.dark-text {
+	color: $text-color2;
+}
+
 #desktop_newsletter_button {
 	margin: 15px;
 	position: fixed;
@@ -173,7 +194,7 @@ footer a {
 
 h1 {
 	// color: #E70000;
-	color: $red;
+	color: $background-color2;
 	padding: 20px;
 	font-size: 60px;
 }
@@ -208,6 +229,11 @@ li a {
 	padding: 5px;
 	margin: 5px;
 }
+
+.logo-100 {
+	max-width: 100px;
+}
+
 
 // .logo-header {
 // 	max-width: 120px;
@@ -345,17 +371,17 @@ li a {
 		text-align: center;
 	}
 	p {
-		color: $background-color;
+		color: $text-color2;
 		font-size: 1.2em;
 	}
 	a {
-		color: $background-color;
+		color: $text-color2;
 	}
 	a:hover {
-		color: $background-color;
+		color: $text-color2;
 	}
 	h3 {
-		color: $background-color;
+		color: $text-color2;
 	}
 
 
@@ -367,14 +393,16 @@ li a {
 			text-decoration: none;
 		}
 		h1 {
-		font-size: 24px;
-		text-align: center;
-		font-weight: 200;
+			font-size: 24px;
+			text-align: center;
+			font-weight: 200;
+			color: $text-color2;
 		}
 		h2 {
 			font-family: tahoma;
 			text-align: center;
 			font-size: 26px;
+			color: $red;
 		}
 		section {
 			padding: 4em;
@@ -387,6 +415,14 @@ li a {
 		h3, h4, h5 {
 			color: black;
 		}
+
+		.web-dev-tagline {
+			margin-top: -8px;
+			font-size: 24px;
+			padding-bottom: 12px;
+			font-weight: 200;
+			
+		}
 	
 		#dev_skills {
 			background: $background-color;
@@ -397,12 +433,13 @@ li a {
 			width: 100%;
 			color: $background-color;
 			h2 {
-				color: white;
+			
 				font-size: 30px;
 				text-align: center;
+			
 			}
 			h3 {
-				color: $background-color;
+				color: $text-color2;
 				font-weight: 400;
 			}
 			.portfolio_item {
@@ -441,10 +478,10 @@ li a {
 
 
 			a {
-				color: $background-color;
+				color: $text-color2;
 			}
 			a:hover {
-				color: $background-color;
+				color: $text-color2;
 				text-decoration: none;
 			}
 			a:visited, a:active{
@@ -454,12 +491,12 @@ li a {
 
 		#dev_rates {
 			background: $background-color2;
-			color: $background-color;
+			color: $text-color2;
 			h3 {
 				font-size: 20px;
 			}
 			h3, p {
-				color: $background-color;
+				color: $text-color2;
 			}
 			.rate_category_details {
 				padding-left: 3em;
@@ -469,7 +506,7 @@ li a {
 				list-style-type: none;
 			}
 			a {
-				color: $background-color;
+				color: $text-color2;
 				font-style: italic;
 			}
 		}
