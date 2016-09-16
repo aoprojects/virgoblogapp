@@ -498,8 +498,12 @@ li a {
 			h3, p {
 				color: $text-color2;
 			}
+			.rate_category {
+				cursor: pointer;
+			}
 			.rate_category_details {
 				padding-left: 3em;
+
 			}
 			ul li {
 				list-style: none;
