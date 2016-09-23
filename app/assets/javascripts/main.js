@@ -9,9 +9,20 @@ $( document ).ready(function() {
 		$(this).find("span.before-toggle").toggle();
 		$(this).find("span.after-toggle").toggle();
 	});
+
+	// below is for scrolling to articles sections from article summary links
+
+	scrollBlogArticles();
 	
-	// if ($("#xs_hamburger").hasClass("hamburger_clicked")) {
-	// 	$(this).css("background-color","white");
-	// };
 });
 
+function scrollBlogArticles() {
+
+	$('#articles_list li a').click(function(e) {
+		e.preventDefault();
+		var articleID = e.currentTarget.id + "_article";
+		$('body').animate({
+			scrollTop: $("#" + articleID).offset().top}, 1000)
+	}) // end click function
+
+} // end scrollBlogArticles function
