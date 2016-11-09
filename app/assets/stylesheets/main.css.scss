@@ -36,6 +36,16 @@ $background-color2: rgba(114,107,104,0.2);
 	}
 }
 
+.action-button {
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+.action-button:after {
+	margin-bottom: 30px;
+}
+
 .after-toggle {
 	display: none;
 	// for initially hiding down angle in dropdown toggle web_dev web_rates
@@ -586,6 +596,10 @@ li a {
 	color: #4B4140 !important;
 	font-size: 19px;
 	transition: 0.5s;
+}
+
+.transparent {
+	opacity: 0.7;
 }
 
 ul {
