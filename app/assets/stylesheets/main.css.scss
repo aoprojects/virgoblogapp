@@ -542,9 +542,15 @@ li a {
 		 
 }
 
-
 .red {
 	color: $red;
+}
+
+@media only screen and (max-width: 767px) {
+	#dev_portfolio .row {
+		margin-left: -40px !important;
+		margin-right: -40px !important;
+	}
 }
 
 .smaller {
