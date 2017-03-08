@@ -413,6 +413,7 @@ li a {
 
 .pages_web_dev {
 	main {
+
 		a:hover {
 			text-decoration: none;
 		}
@@ -542,6 +543,15 @@ li a {
 			display: none;
 		}
 
+	}
+}
+
+.pages_ventures {
+	a.social-link {
+		color: $red;
+	}
+	a.social-link:hover {
+		text-decoration: none;
 	}
 }
 
